@@ -2,6 +2,10 @@
 
 這個專案使用模組化的方式組織 Terraform 代碼，建立完整的 VPC 網路架構，包含 Public 和 Private Subnet、NAT Gateway 以及 SSM Session Manager 支援。
 
+## 架構圖
+
+![AWS 架構圖](diagram.drawio.png)
+
 ## 專案結構
 
 ```
