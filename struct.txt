@@ -1,0 +1,22 @@
+terraform-aws-ec2/
+├── README.md
+├── .gitignore
+├── versions.tf          # Terraform 和 Provider 版本設定
+├── main.tf             # 主要資源定義
+├── variables.tf        # 輸入變數定義
+├── outputs.tf          # 輸出值定義
+├── terraform.tfvars    # 變數實際值（不要 commit 敏感資料）
+├── terraform.tfvars.example  # 變數範例檔
+└── modules/            # 可選：模組化設計
+    ├── vpc/
+    │   ├── main.tf
+    │   ├── variables.tf
+    │   └── outputs.tf
+    ├── security-group/
+    │   ├── main.tf
+    │   ├── variables.tf
+    │   └── outputs.tf
+    └── ec2/
+        ├── main.tf
+        ├── variables.tf
+        └── outputs.tf
