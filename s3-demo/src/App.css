@@ -1,0 +1,97 @@
+.App {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.uploader-container {
+    margin: 20px 0;
+}
+
+.image-uploader {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.upload-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.upload-button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.upload-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.image-preview {
+    margin-top: 20px;
+}
+
+.image-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.change-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.image-url {
+    margin-top: 10px;
+    word-break: break-all;
+}
+
+.error-message {
+    margin-top: 10px;
+    color: #dc3545;
+}
+
+.uploaded-list {
+    margin-top: 40px;
+}
+
+.uploaded-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.uploaded-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.uploaded-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.uploaded-list a:hover {
+    text-decoration: underline;
+}
