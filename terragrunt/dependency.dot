@@ -1,0 +1,25 @@
+digraph terragrunt_dependencies {
+    rankdir=TB;
+    node [shape=ellipse];
+
+    // 根設定
+    "terragrunt.hcl\n(root)" [shape=box];
+
+    // Bucket 設定
+    "bucket-a";
+    "bucket-b";
+    "bucket-c";
+
+    // Module
+    "modules/s3" [shape=box];
+
+    // include 關係 (繼承根設定)
+    "terragrunt.hcl\n(root)" -> "bucket-a" [label="include"];
+    "terragrunt.hcl\n(root)" -> "bucket-b" [label="include"];
+    "terragrunt.hcl\n(root)" -> "bucket-c" [label="include"];
+
+    // source 關係 (引用模組)
+    "bucket-a" -> "modules/s3" [label="source"];
+    "bucket-b" -> "modules/s3" [label="source"];
+    "bucket-c" -> "modules/s3" [label="source"];
+}
